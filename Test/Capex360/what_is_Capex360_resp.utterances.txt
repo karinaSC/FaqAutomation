@@ -1,0 +1,6 @@
+what_is_Capex360_resp
+
+
+The **Capex360** solutions is a process driven application built on a business process management platform. 
+This platform is an implementation of **K2 solutions** that supports Projects and RIA approval flows 
+**for all Global Users**.

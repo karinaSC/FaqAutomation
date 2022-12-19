@@ -1,0 +1,9 @@
+how_can_I_request_access_Capex360_resp
+
+To request Capex360 access you need to open a ticket on Service Now.
+
+I can help you with that!
+  CARD(To request Capex360 access you need to open a ticket on Service Now.
+
+I can help you with that!)
+  BUTTON(Click here to open a ticket | Click here to open a ticket)
