@@ -1,0 +1,12 @@
+which_type_of_access_can_be_requested_in_fieldAgent
+
+Which type of access can be requested in Field Agent?
+Are there different types of Field Agent access?
+What is the difference between types of Field Agent access?
+Which types of licenses can I find in Field Agent?
+What is  the difference between Standard and light license of Field Agent?
+Which type of access can be requested in FieldAgent?
+Are there different types of FieldAgent access?
+What is the difference between types of FieldAgent access?
+Which types of licenses can I find in FieldAgent?
+What is  the difference between Standard and light license of FieldAgent?

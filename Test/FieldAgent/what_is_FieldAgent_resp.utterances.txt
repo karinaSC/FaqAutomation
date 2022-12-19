@@ -1,0 +1,5 @@
+what_is_FieldAgent_resp
+
+Field Agent helps advisors, agronomists, and producers gather in-season, whole-farm insights to maximize yield and profitability. 
+It integrates data from *drones, satellites, weather, soil, and field operations* with powerful models and *AI tools* that give agriculture professionals the knowledge they need to manage the best outcome.
+ABI specific Data which consist of Data related to farmer/growers will be sourced from existing (internally managed) Smart Barley system.

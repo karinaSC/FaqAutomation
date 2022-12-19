@@ -1,0 +1,5 @@
+what_is_Data_Availability_resp
+
+he essence of data availability is that data is highly accessible to those with the appropriate access rights when and where required.
+We aim to have ABI's critical data highly available in the BrewDat Platform for projects across the company.      
+To check which data is already available in the BrewDat Platform click on **BrewDat Reports button** after opening the platform

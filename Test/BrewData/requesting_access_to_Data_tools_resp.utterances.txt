@@ -1,0 +1,5 @@
+requesting_access_to_Data_tools_resp
+
+In the BrewDat Platform, you can request access to data tools 
+or specific business data.","The BrewDat team manages technologies like **Sandbox, Attunity, ETL, Virtual Machine 
+APIM, and Data Services**. They can also build a bridge between you and data owners if you need access to specific business data.","After accessing the BrewDat Platform, click on your profile at the top right of the screen and on the \"Request Access\" button.","Go to [BrewDat Platform](https://brewdat.ab-inbev.com/reports) now!

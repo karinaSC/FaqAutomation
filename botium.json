@@ -1,0 +1,13 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "botStella",
+      "CONTAINERMODE": "directline3",
+      "DIRECTLINE3_SECRET": "U6SmqcLhPQY.wt1MsyLu0JaUrpkFLKT2p18zrTeLaNaSodCLMQaaU20",
+      "WAITFORBOTTIMEOUT":"17000"
+
+    },
+    "Sources": {},
+    "Envs": {}
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-19T12:54:04.937Z",
+    "end": "2022-12-19T12:54:13.425Z",
+    "duration": 8488,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95e0c418-8538-4c94-902b-1a7f2c55cedd",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7c32c163-838a-4743-b7d0-caf3d4ae1fb4",
+          "title": "Botium Test-Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Botium Test-Suite\"",
+              "fullTitle": "Botium Test-Suite \"before all\" hook in \"Botium Test-Suite\"",
+              "timedOut": false,
+              "duration": 1210,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver.Build()\n  .then((container) => {\n    suite.container = container\n    done()\n  })\n  .catch(done)",
+              "err": {},
+              "uuid": "70531b48-4b32-4159-a1c8-e0925971773b",
+              "parentUUID": "7c32c163-838a-4743-b7d0-caf3d4ae1fb4",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook in \"Botium Test-Suite\"",
+              "fullTitle": "Botium Test-Suite \"before each\" hook in \"Botium Test-Suite\"",
+              "timedOut": false,
+              "duration": 662,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "suite.container ? suite.container.Start().then(() => done()).catch(done) : done()",
+              "err": {},
+              "uuid": "230ea5de-25f2-4d13-9bb6-13998df484d9",
+              "parentUUID": "7c32c163-838a-4743-b7d0-caf3d4ae1fb4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Botium Test-Suite\"",
+              "fullTitle": "Botium Test-Suite \"after all\" hook in \"Botium Test-Suite\"",
+              "timedOut": false,
+              "duration": 7,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "suite.container ? suite.container.Clean().then(() => done()).catch(done) : done()",
+              "err": {},
+              "uuid": "c2acee5d-9f87-45a5-ad21-2969d67b4b60",
+              "parentUUID": "7c32c163-838a-4743-b7d0-caf3d4ae1fb4",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook in \"Botium Test-Suite\"",
+              "fullTitle": "Botium Test-Suite \"after each\" hook in \"Botium Test-Suite\"",
+              "timedOut": false,
+              "duration": 3,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "suite.container ? suite.container.Stop().then(() => done()).catch(done) : done()",
+              "err": {},
+              "uuid": "75a47b3e-0ee8-42d4-be23-b55a1b17b80c",
+              "parentUUID": "7c32c163-838a-4743-b7d0-caf3d4ae1fb4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "where_can_I_find_Llamasoft_application_training_materials/where_can_I_find_Llamasoft_application_training_materials-L1",
+              "fullTitle": "Botium Test-Suite where_can_I_find_Llamasoft_application_training_materials/where_can_I_find_Llamasoft_application_training_materials-L1",
+              "timedOut": false,
+              "duration": 6595,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Conversation Log\",\n  \"value\": \"#me: Where can I find Llamasoft application training materials?\\n#bot: For training resources including on-demand eLearning and live, instructor-led training, please visit the [Coupa University Edge Learning Portal](https://success.coupa.com/Learn). \\nPlease see the Course Catalog for available courses.\\nIf you do not have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\"\n}",
+              "code": "debug('running testcase ' + convo.header.name)\nconst attachmentsLog = []\nconst listenerMe = (container, msg) => {\n  if (msg.attachments) attachmentsLog.push(...msg.attachments)\n}\nconst listenerBot = (container, msg) => {\n  if (msg.attachments) attachmentsLog.push(...msg.attachments)\n}\nconst listenerAttachments = (container, attachment) => {\n  attachmentsLog.push(attachment)\n}\ndriver.on('MESSAGE_SENTTOBOT', listenerMe)\ndriver.on('MESSAGE_RECEIVEDFROMBOT', listenerBot)\ndriver.on('MESSAGE_ATTACHMENT', listenerAttachments)\nconst finish = (transcript, err) => {\n  if (transcript) {\n    addContext(runner, { title: 'Conversation Log', value: transcript.prettifyActual() })\n  }\n  driver.eventEmitter.removeListener('MESSAGE_SENTTOBOT', listenerMe)\n  driver.eventEmitter.removeListener('MESSAGE_RECEIVEDFROMBOT', listenerBot)\n  driver.eventEmitter.removeListener('MESSAGE_ATTACHMENT', listenerAttachments)\n  if (argv.attachments && attachmentsLog.length > 0) {\n    debug(`Found ${attachmentsLog.length} attachments, saving to folder ${argv.attachments}`)\n    attachmentsLog.forEach((a, i) => {\n      const filename = slug(convo.header.name) + '_' + i + (a.name ? '_' + slug(a.name) : '') + (a.mimeType ? '.' + mime.extension(a.mimeType) : '')\n      const outputTo = path.join(argv.attachments, filename)\n      try {\n        fs.writeFileSync(outputTo, Buffer.from(a.base64, 'base64'))\n      } catch (err) {\n        debug(`Failed to write attachment to ${outputTo}: ${err.message || util.inspect(err)}`)\n      }\n    })\n  }\n  if (err) {\n    testcaseDone(wrapBotiumError(err))\n  } else {\n    testcaseDone()\n  }\n}\nconvo.Run(suite.container)\n  .then((transcript) => {\n    debug(convo.header.name + ' ready, calling done function.')\n    finish(transcript)\n  })\n  .catch((err) => {\n    debug(convo.header.name + ' failed: ' + util.inspect(err))\n    finish(err.transcript, err)\n  })",
+              "err": {
+                "message": "Error: where_can_I_find_Llamasoft_application_training_materials/where_can_I_find_Llamasoft_application_training_materials-L1/Line 6: Bot response (on Line 3: #me - Where can I find Llamasoft application training materials?) \"For training resources including on-demand eLearning and live, instructor-led training, please visit the [Coupa University Edge Learning Portal](https://success.coupa.com/Learn). Please see the Course Catalog for available courses. If you do not have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\" expected to match \"For knowledge and practices sharing, please visit the [CoupaCommunity Portal](https://coupa-external.okta.com/) and choose the **Coupa Community Portal**. Please see the available forums and news. If you don't have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\"\r\n########################################\r\nASSERTION FAILED in TextMatchAsserter - Expected: [\"For knowledge and practices sharing, please visit the [CoupaCommunity Portal](https://coupa-external.okta.com/) and choose the **Coupa Community Portal**. Please see the available forums and news. If you don't have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\"]  - Actual: \"For training resources including on-demand eLearning and live, instructor-led training, please visit the [Coupa University Edge Learning Portal](https://success.coupa.com/Learn). Please see the Course Catalog for available courses. If you do not have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\"\r\nINPUT: Where can I find Llamasoft application training materials?\r\n------------ TRANSCRIPT ----------------------------\r\n#me: Where can I find Llamasoft application training materials?\r\n#bot: For training resources including on-demand eLearning and live, instructor-led training, please visit the [Coupa University Edge Learning Portal](https://success.coupa.com/Learn). \nPlease see the Course Catalog for available courses.\nIf you do not have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).",
+                "estack": "Error: where_can_I_find_Llamasoft_application_training_materials/where_can_I_find_Llamasoft_application_training_materials-L1/Line 6: Bot response (on Line 3: #me - Where can I find Llamasoft application training materials?) \"For training resources including on-demand eLearning and live, instructor-led training, please visit the [Coupa University Edge Learning Portal](https://success.coupa.com/Learn). Please see the Course Catalog for available courses. If you do not have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\" expected to match \"For knowledge and practices sharing, please visit the [CoupaCommunity Portal](https://coupa-external.okta.com/) and choose the **Coupa Community Portal**. Please see the available forums and news. If you don't have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\"\r\n########################################\r\nASSERTION FAILED in TextMatchAsserter - Expected: [\"For knowledge and practices sharing, please visit the [CoupaCommunity Portal](https://coupa-external.okta.com/) and choose the **Coupa Community Portal**. Please see the available forums and news. If you don't have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\"]  - Actual: \"For training resources including on-demand eLearning and live, instructor-led training, please visit the [Coupa University Edge Learning Portal](https://success.coupa.com/Learn). Please see the Course Catalog for available courses. If you do not have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\"\r\nINPUT: Where can I find Llamasoft application training materials?\r\n------------ TRANSCRIPT ----------------------------\r\n#me: Where can I find Llamasoft application training materials?\r\n#bot: For training resources including on-demand eLearning and live, instructor-led training, please visit the [Coupa University Edge Learning Portal](https://success.coupa.com/Learn). \nPlease see the Course Catalog for available courses.\nIf you do not have a Coupa-Okta login, please contact [Coupa](mailto:coupaportals@coupa.com).\n    at wrapBotiumError (C:\\Users\\CampanhK\\AppData\\Roaming\\npm\\node_modules\\botium-cli\\src\\run\\index.js:76:12)\n    at finish (C:\\Users\\CampanhK\\AppData\\Roaming\\npm\\node_modules\\botium-cli\\src\\run\\index.js:205:24)\n    at C:\\Users\\CampanhK\\AppData\\Roaming\\npm\\node_modules\\botium-cli\\src\\run\\index.js:218:11",
+                "diff": null
+              },
+              "uuid": "baf734a5-5a67-4bc9-a7a8-ac6d9cc55240",
+              "parentUUID": "7c32c163-838a-4743-b7d0-caf3d4ae1fb4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "baf734a5-5a67-4bc9-a7a8-ac6d9cc55240"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6595,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

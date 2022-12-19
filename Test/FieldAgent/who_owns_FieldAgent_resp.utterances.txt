@@ -1,0 +1,3 @@
+who_owns_FieldAgent_resp
+
+Field Agent owner is **Renato Badaro** renato.badaro@ab-inbev.com and backup owner **Ejasalikhan SP** ejasalikhan.sp-ext@ab-inbev.com

@@ -1,0 +1,37 @@
+what_is_Data_Availability
+
+What is Data Availability?
+How do I find which data is available?
+How can I search if a data is available?
+How can I know which data is available in the BrewDat?
+How can I know which data is available in the Data Platfform?
+How can I know which data is available in the ABI Data Platform?
+How can I know which data is available in the BrewDat Portal?
+How can I know which data is available in the Brewdata?
+How can I know which data is available in the AB InBev Data?
+Which data is available in BrewDat?
+Which data is available in Data Platfform?
+Which data is available in ABI Data Platform?
+Which data is available in BrewDat Portal?
+Which data is available in Brewdata?
+Which data is available in AB InBev Data?
+How can I search for a data?
+Searching for a data available in BrewDat
+Searching for a data available in Data Platfform
+Searching for a data available in ABI Data Platform
+Searching for a data available in BrewDat Portal
+Searching for a data available in Brewdata
+Searching for a data available in AB InBev Data
+Searching for a data in BrewDat
+Searching for a data in Data Platfform
+Searching for a data in ABI Data Platform
+Searching for a data in BrewDat Portal
+Searching for a data in Brewdata
+Searching for a data in AB InBev Data
+Data available in BrewDat
+Data available in Data Platfform
+Data available in ABI Data Platform
+Data available in BrewDat Portal
+Data available in Brewdata
+Data available in AB InBev Data
+Searching for data dashboard

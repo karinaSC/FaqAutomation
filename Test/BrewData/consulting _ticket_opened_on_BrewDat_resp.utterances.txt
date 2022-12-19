@@ -1,0 +1,5 @@
+consulting _ticket_opened_on_BrewDat_resp
+
+In the BrewDat Platform, you can view your tickets.
+We manage the BrewDat support requests via the ABI global Service Now platform.
+After opening the BrewDat Platform, click on your profile at the top right of the screen and on the **View my Tickets** button.

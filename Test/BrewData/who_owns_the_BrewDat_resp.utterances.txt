@@ -1,0 +1,4 @@
+who_owns_the_BrewDat_resp
+
+The BrewDat team, our Global Data & Architecture group, manages the BrewDat Platform.
+You can contact the BrewDat team by sending an email to brewdat@ab-inbev.com.

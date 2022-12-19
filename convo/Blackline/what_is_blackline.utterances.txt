@@ -1,0 +1,11 @@
+what_is_blackline
+
+#me
+what_is_blackline
+
+#bot
+BlackLine is a tool that helps automate the account reconciliation process. It is capable of integration with ERP to auto interface GL and sub ledger balances for reconciliation from ERP system to Blackline.
+
+It also has an auto certification in place where in the tool will certify a reconcilation based on enabled logics without any manual interventions. It is also capable of importing line items from ERP to the respective reconciliations automatically using the Transaction matching module feature.
+
+Blackline support multiple languages and currencies and currecy rates can be uploaded to convert all amounts to a standard reporting currency automatically. The tool offers good controls over your process - automatic segragation of duties and audit trail amongst other benefits

@@ -1,0 +1,5 @@
+I_need_to_report_bug_on_BrewDat_resp
+
+In the BrewDat Platform, you can report a bug 🐛
+To do this, after opening the BrewDat Platform, click on your profile at the top right of 
+the screen and on the **Report a Bug** button.

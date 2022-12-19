@@ -1,0 +1,6 @@
+how_can_I_access_FieldAgent_resp
+
+Filed agent is an open source where anyone can access the application through [fieldagent.net](https://www.fieldagent.net/).
+As we understand that the application Field Agent is integrated with Smartbarley, the access granting process completely depends on Smartbarley application. A new user who need to access Field Agent, should have an account created in Smartbarley application.
+
+[Access Smartbarley]

@@ -1,0 +1,5 @@
+how_do_I_find_report_resp
+
+Reports is the BrewDat Portal's feature for everyone across AB InBev. A powerful new way to search for a relevant report available in Power BI 📊, and a crucial evolution to make your report searchable and visible across our company.
+You can access the BrewDat Platform by [clicking here](https://brewdat.ab-inbev.com/reports).
+

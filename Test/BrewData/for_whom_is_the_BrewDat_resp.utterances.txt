@@ -1,0 +1,3 @@
+for_whom_is_the_BrewDat_resp
+
+BrewDat Platform **is for everyone across our company**: Business users can find any PowerBI report in AB InBev; Analysts can access data sets and import them to PowerBI, and Data Scientists can use the Analytics Sandbox to build models and algorithms.

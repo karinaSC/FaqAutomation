@@ -1,0 +1,6 @@
+what_is_BrewData_resp
+
+Great to know that you are interested in one of our main tools!
+BrewDat Platform is our company's leading Data Platform: A business capability to enable data producers and consumers, orchestrating efficient value creation and exchange within a **globally connected ecosystem**.
+BrewDat provides transformed ready-to use datasets from all six zones, across virtually every function – From Logistics, marketing, to finance and more!\n\nBrewDat ecosystem includes tools like **BrewDat Sandbox** and **BrewDat Reporting tool**.
+You can access the BrewDat Platform by [clicking here](https://brewdat.ab-inbev.com/reports).

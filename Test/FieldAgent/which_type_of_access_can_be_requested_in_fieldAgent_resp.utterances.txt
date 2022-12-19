@@ -1,0 +1,3 @@
+which_type_of_access_can_be_requested_in_fieldAgent_resp
+
+In FieldAgent Database layer there are no segregation of internal accounts or 3rd party accounts.
